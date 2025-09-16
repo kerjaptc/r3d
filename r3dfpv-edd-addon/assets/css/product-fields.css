@@ -1,0 +1,4 @@
+#r3dfpv-variants-container .r3dfpv-variant { margin-bottom: 1.5em; background:#fff; padding:10px; border:1px solid #ddd; }
+.r3dfpv-variant p { margin: 0 0 8px; }
+.r3dfpv-variant hr { border: none; border-top:1px solid #eee; margin-top:10px; }
+.r3dfpv-variant-stl-item { margin-bottom:6px; }

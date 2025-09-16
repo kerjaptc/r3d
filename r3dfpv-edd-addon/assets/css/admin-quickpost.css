@@ -1,0 +1,109 @@
+/**
+ * Admin Quick Post CSS for R3DFPV EDD Addon Pack
+ * Styles for the quick add product form
+ * 
+ * @package R3DFPV_EDD_Addon
+ */
+
+/* Form styling */
+.r3dfpv-quick-add-form {
+    max-width: 800px;
+}
+
+.r3dfpv-quick-add-form h2 {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.stl-url-input {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.stl-url-input input {
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.remove-stl-url {
+    color: #dc3232;
+}
+
+.remove-stl-url:hover {
+    color: #a00;
+    border-color: #a00;
+}
+
+/* Error styling */
+.error-field {
+    border-color: #dc3232 !important;
+}
+
+.error-message {
+    color: #dc3232;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Advanced options */
+.advanced-options {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f6f7f7;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+.advanced-options.hidden {
+    display: none;
+}
+
+.toggle-advanced {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+/* Loading state */
+.submit-loading {
+    position: relative;
+}
+
+.submit-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media screen and (max-width: 782px) {
+    .stl-url-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .stl-url-input input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .remove-stl-url {
+        align-self: flex-end;
+    }
+}
